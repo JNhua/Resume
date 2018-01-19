@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgrand"
+    android:orientation="vertical" >
+
+      <VideoView
+          android:id="@+id/VideoView01"
+          android:layout_width="320dp"
+          android:layout_height="240dp"
+          android:layout_above="@+id/video_play"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="54dp"
+        android:text="播放 " />
+
+    <Button
+        android:id="@+id/video_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/video_play"
+        android:layout_alignBottom="@+id/video_play"
+        android:layout_centerHorizontal="true"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/video_pause"
+        android:layout_alignBottom="@+id/video_pause"
+        android:layout_alignParentLeft="true"
+        android:text="装载" />
+
+</RelativeLayout>
